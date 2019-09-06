@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://locahost:8761/eureka/
+zuul:
+  routes:
+    provider: /p/**
